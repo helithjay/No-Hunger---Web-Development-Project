@@ -1,0 +1,176 @@
+/*styles for the navigation bar*/
+header {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color:#3D1C07 ;
+    color: #fff;
+    padding: 1%;
+    position: fixed;
+    width: 98%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 4px 6px rgba(230, 215, 215, 0.466), 0 1px 3p xrgba(0, 0, 0, 0.3);
+}
+nav {
+    display: flex;
+    background-color: #e4ddd1;
+    padding: 3px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #df950b;
+    
+}
+
+.navlist li {
+    display: inline-block;
+    padding: 10px 30px 3px 15px;
+    color: rgb(233, 223, 182);
+    font-weight: bold;
+    position: sticky;
+    overflow: hidden;
+    
+}
+
+.navlist li a {
+    color: #201301;
+    text-decoration: none;
+    font-size: 30px;
+}
+.navlist li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #b97d0e;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.navlist li a:hover::after{
+    width: 70%;
+}
+.navlist li a:hover {
+    color: rgb(121, 81, 8);
+}    
+
+.navlist li a:active {
+    color: rgb(159, 161, 154);
+}
+
+
+/*styles for the feedback form*/
+body{
+    background-image: url("feedback.jpg");
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+form{
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border-color: #1f0d02;
+    background-color:rgba(77, 167, 200, 0.4);
+    background-position: center;
+    text-align: center;
+    margin-top: 15%;
+    background-color: #bfdfcb;
+    align-items: center;
+   
+}
+
+label{
+    font-size: 18px;
+}
+.home-btn{
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    left: 40%;
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 15px;
+    padding: 2px 10px;
+    text-decoration: none;
+    color: rgb(3, 3, 51);
+}
+.home-btn:hover{
+    background: transparent;
+    background-attachment: fixed;
+    color: black;
+    border-style: solid;
+}
+@media (max-width:800px){
+    form{
+        font-size: 10px;
+    }
+}
+
+form h1{
+    text-align: center;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+input[type="reset"] {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+/*styles for the pagefooter*/
+.ftr{
+    position: absolute;
+    text-align: center;
+    background-color: #2b1b03;
+    height: 200px;
+    width: 200%;
+    bottom: -150px;
+}
+footer{
+   
+    bottom: -150px;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    background-color: #e0d7bd;
+    height: 150px;
+    width: 200%;
+    position: relative;
+    margin-top: 10%;
+}
+.footerText{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateY(30%); 
+
+}
+#copy {
+   
+    text-align: center;
+}
+#p{
+    position: absolute;
+    top: 580%;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    text-align: center;
+   
+}

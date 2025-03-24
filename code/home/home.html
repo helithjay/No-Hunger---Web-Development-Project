@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health </title>
+    <link rel="stylesheet" href="home.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section>
+    <div class="home">
+    <header >
+        <nav>
+            <a href="home.html"> <img id="logo" src="logo1.png" alt="logo"></a>
+            <ul class="navlist">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="user profile.html"><span class="material-symbols-outlined" style="font-size: 50px; top: 10%; background-color:#201301;color: rgb(204, 195, 176);border-radius:50% ;">account_circle</span></a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    <div class="text">
+        <h1><upper>A Journey Towards Zero Hunger</upper></h1>
+        <p>"Let us cultivate a future of resilient food systems and sustainable food security for all."</p>
+    </div>
+</div>
+</section>
+
+<section class="mission">
+    <fieldset>
+        <legend><h1>Our Mission</h1></legend>
+        <h2>"Innovative Strategies for Sustainable Food Security and Future Generations"</h2>
+        <p class=mission1>This topic focuses on developing and implementing innovative strategies to achieve sustainable food security. It aims 
+            to address global hunger and ensure access to nutritious food for future generations. Key areas include sustainable 
+            agricultural practices, reducing food waste and promoting policies that support food sovereignty. The goal is to create
+            resilient food systems that emphasizes the importance of education and community involvement in fostering long-term 
+            sustainability and food security.</p>
+    </fieldset>
+    
+</section>
+
+<section class="course">
+    <h1>Comprehensive Strategies for Achieving Zero Hunger</h1>
+    <div class="content">
+
+        <div class="options">
+            <h3>Food Security and Nutrition </h3>
+            <img src="content1.jpg" alt="44" id="pic1" height="300" width="300">
+            <br><a href="content.html" class="read-btn">Read More</a><br>
+        </div>
+
+        <div class="options">
+            <h3>Sustainable Agriculture</h3>
+            <img src="content2.jpg" alt="44" id="pic2" height="300" width="300">
+            <br><a href="content2.html" class="read-btn">Read More</a><br>
+        </div>
+
+        <div class="options">
+            <h3>Economic and Social Policies</h3>
+            <img src="content3.png" alt="44" id="pic3" height="300" width="300">
+            <br><a href="content3.html" class="read-btn">Read More</a><br>
+        </div>
+    </div>
+</section>
+
+
+<section class="formlink">
+    <h1>Let Us Know Your Experience On Our Services</h1>
+    <p>Click the button below to share your feedback with us </p>
+    <a class="formlink-btn" href="feedback.html">Click Here</a>
+</section>
+
+<div class="footerText">
+    <footer>
+        <p id="copy">&copy; 2024 EndHunger . All rights reserved. Designed by <a href="pageeditor3.html"><i>Helith Jayasuriya</i></a></p>   
+    </footer>
+</div>
+
+
+<script>
+
+    const header = document.querySelector("header");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+    if(menuBtn){
+        menuBtn.addEventListener("click", () => {
+            header.classList.toggle("show-mobile-menu");
+        });
+    }
+    if(closeMenuBtn){
+        closeMenuBtn.addEventListener("click", () => {
+            header.classList.remove("show-mobile-menu");
+        });
+
+    }
+</script>
+
+</body>
+</html>
